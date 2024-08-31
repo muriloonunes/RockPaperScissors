@@ -1,9 +1,6 @@
 <resources>
     <string name="app_name">Jokenpo</string>
     <string name="app_choice">Escolha do App:</string>
-    <string name="app_choice_rock">Escolha do App: Pedra</string>
-    <string name="app_choice_paper">Escolha do App: Papel</string>
-    <string name="app_choice_scissors">Escolha do App: Tesoura</string>
     <string name="user_choice">Escolha entre pedra, papel e tesoura:</string>
     <string name="rock">👊</string>
     <string name="rock_text">Pedra</string>
