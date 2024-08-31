@@ -1,9 +1,6 @@
 <resources>
     <string name="app_name">RockPaperScissors</string>
     <string name="app_choice">App Choice:</string>
-    <string name="app_choice_rock">App Choice: Rock</string>
-    <string name="app_choice_paper">App Choice: Paper</string>
-    <string name="app_choice_scissors">App Choice: Scissors</string>
     <string name="user_choice">Choose between rock, paper and scissors:</string>
     <string name="rock">👊</string>
     <string name="rock_text">Rock</string>
