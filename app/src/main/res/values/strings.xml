@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">RockPaperScissors</string>
+    <string name="app_choice">App Choice:</string>
+    <string name="app_choice_rock">App Choice: Rock</string>
+    <string name="app_choice_paper">App Choice: Paper</string>
+    <string name="app_choice_scissors">App Choice: Scissors</string>
+    <string name="user_choice">Choose between rock, paper and scissors:</string>
+    <string name="rock">👊</string>
+    <string name="rock_text">Rock</string>
+    <string name="paper">🖐️</string>
+    <string name="paper_text">Paper️</string>
+    <string name="scissors">✌️️</string>
+    <string name="scissors_text">Scissorss</string>
+    <string name="you_lost">You lost! ☹️</string>
+    <string name="you_won">You won! 🥳</string>
+    <string name="draw">Draw! 😬</string>
+    <string name="game_result">Your choice: %1$s\nApp choice: %2$s</string>
+</resources>
