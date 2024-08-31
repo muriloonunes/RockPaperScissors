@@ -1,0 +1,154 @@
+<?xml version="0.0.1" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_choice"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <ImageView
+        android:id="@+id/imageApp"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textApp"
+        app:srcCompat="@drawable/padrao" />
+
+    <TextView
+        android:id="@+id/textUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/user_choice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageApp" />
+
+    <ImageView
+        android:id="@+id/imageRock"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:adjustViewBounds="true"
+        android:onClick="chooseRock"
+        app:layout_constraintEnd_toStartOf="@+id/imagePaper"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textUser"
+        app:srcCompat="@drawable/padrao" />
+
+    <ImageView
+        android:id="@+id/imagePaper"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:adjustViewBounds="true"
+        android:onClick="choosePaper"
+        app:layout_constraintEnd_toStartOf="@+id/imageScissors"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageRock"
+        app:layout_constraintTop_toBottomOf="@+id/textUser"
+        app:srcCompat="@drawable/padrao" />
+
+    <ImageView
+        android:id="@+id/imageScissors"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:adjustViewBounds="true"
+        android:onClick="chooseScissors"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imagePaper"
+        app:layout_constraintTop_toBottomOf="@+id/textUser"
+        app:srcCompat="@drawable/padrao" />
+
+    <TextView
+        android:id="@+id/textPedra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rock"
+        android:textAlignment="center"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageRock"
+        app:layout_constraintEnd_toEndOf="@+id/imageRock"
+        app:layout_constraintStart_toStartOf="@+id/imageRock"
+        app:layout_constraintTop_toTopOf="@+id/imageRock" />
+
+    <TextView
+        android:id="@+id/textPapel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/paper"
+        android:textAlignment="center"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imagePaper"
+        app:layout_constraintEnd_toEndOf="@+id/imagePaper"
+        app:layout_constraintStart_toStartOf="@+id/imagePaper"
+        app:layout_constraintTop_toTopOf="@+id/imagePaper" />
+
+    <TextView
+        android:id="@+id/textTesoura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/scissors"
+        android:textAlignment="center"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageScissors"
+        app:layout_constraintEnd_toEndOf="@+id/imageScissors"
+        app:layout_constraintStart_toStartOf="@+id/imageScissors"
+        app:layout_constraintTop_toTopOf="@+id/imageScissors" />
+
+    <TextView
+        android:id="@+id/textResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textOverview" />
+
+    <TextView
+        android:id="@+id/textChoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageApp"
+        app:layout_constraintEnd_toEndOf="@+id/imageApp"
+        app:layout_constraintStart_toStartOf="@+id/imageApp"
+        app:layout_constraintTop_toTopOf="@+id/imageApp" />
+
+    <TextView
+        android:id="@+id/textOverview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagePaper" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
