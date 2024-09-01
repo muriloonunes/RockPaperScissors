@@ -7,18 +7,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textApp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/app_choice"
-        android:textAlignment="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.022" />
-
     <ImageView
         android:id="@+id/imageApp"
         android:layout_width="140dp"
@@ -32,22 +20,37 @@
         app:srcCompat="@drawable/padrao" />
 
     <TextView
-        android:id="@+id/textUser"
+        android:id="@+id/textApp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="@string/user_choice"
+        android:text="@string/app_choice"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagePaper" />
+
+    <ImageView
+        android:id="@+id/imageScissors"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="12dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/image_scissor_description"
+        android:onClick="selectScissors"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageApp" />
+        app:layout_constraintStart_toEndOf="@+id/imagePaper"
+        app:layout_constraintTop_toBottomOf="@+id/textUser"
+        app:srcCompat="@drawable/padrao" />
 
     <ImageView
         android:id="@+id/imageRock"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="12dp"
         android:adjustViewBounds="true"
+        android:contentDescription="@string/image_rock_description"
         android:onClick="selectRock"
         app:layout_constraintEnd_toStartOf="@+id/imagePaper"
         app:layout_constraintHorizontal_bias="0.5"
@@ -59,8 +62,9 @@
         android:id="@+id/imagePaper"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="12dp"
         android:adjustViewBounds="true"
+        android:contentDescription="@string/image_paper_description"
         android:onClick="selectPaper"
         app:layout_constraintEnd_toStartOf="@+id/imageScissors"
         app:layout_constraintHorizontal_bias="0.5"
@@ -68,18 +72,44 @@
         app:layout_constraintTop_toBottomOf="@+id/textUser"
         app:srcCompat="@drawable/padrao" />
 
-    <ImageView
-        android:id="@+id/imageScissors"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+    <TextView
+        android:id="@+id/textPapel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/paper"
+        android:textAlignment="center"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imagePaper"
+        app:layout_constraintEnd_toEndOf="@+id/imagePaper"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/imagePaper"
+        app:layout_constraintTop_toTopOf="@+id/imagePaper"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/textTesoura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/scissors"
+        android:textAlignment="center"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageScissors"
+        app:layout_constraintEnd_toEndOf="@+id/imageScissors"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/imageScissors"
+        app:layout_constraintTop_toTopOf="@+id/imageScissors"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/textUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:adjustViewBounds="true"
-        android:onClick="selectScissors"
+        android:text="@string/user_choice"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imagePaper"
-        app:layout_constraintTop_toBottomOf="@+id/textUser"
-        app:srcCompat="@drawable/padrao" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textPedra"
@@ -91,55 +121,23 @@
         app:layout_constraintBottom_toBottomOf="@+id/imageRock"
         app:layout_constraintEnd_toEndOf="@+id/imageRock"
         app:layout_constraintStart_toStartOf="@+id/imageRock"
-        app:layout_constraintTop_toTopOf="@+id/imageRock" />
-
-    <TextView
-        android:id="@+id/textPapel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/paper"
-        android:textAlignment="center"
-        android:textSize="48sp"
-        app:layout_constraintBottom_toBottomOf="@+id/imagePaper"
-        app:layout_constraintEnd_toEndOf="@+id/imagePaper"
-        app:layout_constraintStart_toStartOf="@+id/imagePaper"
-        app:layout_constraintTop_toTopOf="@+id/imagePaper" />
-
-    <TextView
-        android:id="@+id/textTesoura"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/scissors"
-        android:textAlignment="center"
-        android:textSize="48sp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageScissors"
-        app:layout_constraintEnd_toEndOf="@+id/imageScissors"
-        app:layout_constraintHorizontal_bias="0.45"
-        app:layout_constraintStart_toStartOf="@+id/imageScissors"
-        app:layout_constraintTop_toTopOf="@+id/imageScissors" />
+        app:layout_constraintTop_toTopOf="@+id/imageRock"
+        app:layout_constraintVertical_bias="0.50" />
 
     <TextView
         android:id="@+id/textResult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="16dp"
         android:textAlignment="center"
         android:textSize="24sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textOverview" />
-
-    <TextView
-        android:id="@+id/textChoice"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="60sp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageApp"
-        app:layout_constraintEnd_toEndOf="@+id/imageApp"
-        app:layout_constraintStart_toStartOf="@+id/imageApp"
-        app:layout_constraintTop_toTopOf="@+id/imageApp" />
+        app:layout_constraintTop_toBottomOf="@+id/textOverview"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textOverview"
@@ -150,6 +148,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imagePaper" />
+        app:layout_constraintTop_toBottomOf="@+id/imageApp" />
+
+    <TextView
+        android:id="@+id/textChoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageApp"
+        app:layout_constraintEnd_toEndOf="@+id/imageApp"
+        app:layout_constraintStart_toStartOf="@+id/imageApp"
+        app:layout_constraintTop_toTopOf="@+id/imageApp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

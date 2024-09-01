@@ -36,19 +36,15 @@ class MainActivity : AppCompatActivity() {
         val options = arrayOf("rock", "paper", "scissors")
         val appChoice = options[randomNumber]
         val textChoice = findViewById<TextView>(R.id.textChoice)
-        val textApp = findViewById<TextView>(R.id.textApp)
 
         when (appChoice) {
             "rock" -> {
-                textApp.setText(R.string.app_choice_rock)
                 textChoice.setText(R.string.rock)
             }
             "paper" -> {
-                textApp.setText(R.string.app_choice_paper)
                 textChoice.setText(R.string.paper)
             }
             "scissors" -> {
-                textApp.setText(R.string.app_choice_scissors)
                 textChoice.setText(R.string.scissors)
             }
         }
