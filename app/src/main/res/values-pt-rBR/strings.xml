@@ -12,4 +12,7 @@
     <string name="draw">Empate! 😬</string>
     <string name="game_result">Sua escolha: %1$s\nEscolha do app: %2$s</string>
     <string name="scissors_text">Tesoura</string>
+    <string name="image_rock_description">Círculo com um emoji de punho, representando a opção \'pedra\'.</string>
+    <string name="image_paper_description">Círculo com um emoji de mão aberta, representando a opção \'papel\'</string>
+    <string name="image_scissor_description">Círculo com um emoji de mão fazendo um V, representando a opção \'tesoura\'</string>
 </resources>

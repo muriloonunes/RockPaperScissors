@@ -12,4 +12,7 @@
     <string name="you_won">You won! 🥳</string>
     <string name="draw">Draw! 😬</string>
     <string name="game_result">Your choice: %1$s\nApp choice: %2$s</string>
+    <string name="image_rock_description">circle container for a fist emoji, that represents a rock</string>"
+    <string name="image_paper_description">circle container for an open hand emoji, that represents a paper</string>"
+    <string name="image_scissor_description">circle container for a hand making an "V" emoji, that represents a scissor</string>"
 </resources>
