@@ -24,16 +24,16 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    public void chooseRock(View view) {
+    public void selectRock(View view) {
         checkWinner("rock");
     }
 
-    public void choosePaper(View view) {
+    public void selectPaper(View view) {
         checkWinner("paper");
 
     }
 
-    public void chooseScissors(View view) {
+    public void selectScissors(View view) {
         checkWinner("scissors");
     }
 
@@ -42,19 +42,14 @@ public class MainActivity extends AppCompatActivity {
         String[] options = {"rock", "paper", "scissors"};
         String appChoice = options[randomN];
         TextView textChoice = findViewById(R.id.textChoice);
-        TextView textApp = findViewById(R.id.textApp);
-
         switch (appChoice) {
             case "rock":
-                textApp.setText(R.string.app_choice_rock);
                 textChoice.setText(R.string.rock);
                 break;
             case "paper":
-                textApp.setText(R.string.app_choice_paper);
                 textChoice.setText(R.string.paper);
                 break;
             case "scissors":
-                textApp.setText(R.string.app_choice_scissors);
                 textChoice.setText(R.string.scissors);
                 break;
         }
